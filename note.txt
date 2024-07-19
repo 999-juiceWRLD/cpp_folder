@@ -1,0 +1,19 @@
+in order to compile:
+    clang++ -std=c++11 <filename> -o <output_name>
+or
+    g++ -std=c++11 <filename> -o res <output_name>
+
+std::vector
+std::tuple
+
+to get the current version inside main function:
+
+    if (__cplusplus == 202002L) std::cout << "C++20\n";
+    else if (__cplusplus == 201703L) std::cout << "C++17\n";
+    else if (__cplusplus == 201402L) std::cout << "C++14\n";
+    else if (__cplusplus == 201103L) std::cout << "C++11\n";
+    else if (__cplusplus == 199711L) std::cout << "C++98\n";
+    else std::cout << "pre-standard C++\n";
+
+
+don't forget to create an ascii banner for c++ projects!
